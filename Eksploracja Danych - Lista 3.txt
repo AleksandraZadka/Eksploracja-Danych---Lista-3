@@ -1,0 +1,3 @@
+2.CREATE VIEW Zadka_WymiarDostawca AS SELECT SupplierID,CompanyName,City,Country from Suppliers
+3.CREATE VIEW Zadka_WymiarProdukt AS SELECT Products.ProductID, Products.ProductName, Categories.CategoryName from Products INNER JOIN Categories ON Products.CategoryID=Categories.CategoryID
+4.CREATE VIEW Zadka_FaktyProdukty AS SELECT ProductID, SupplierID,UnitsInStock from Products
